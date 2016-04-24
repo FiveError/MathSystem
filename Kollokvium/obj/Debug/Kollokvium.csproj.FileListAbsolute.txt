@@ -7,3 +7,12 @@ c:\users\сергей\documents\visual studio 2015\Projects\Kollokvium\Kollokviu
 c:\users\сергей\documents\visual studio 2015\Projects\Kollokvium\Kollokvium\obj\Debug\Kollokvium.csproj.GenerateResource.Cache
 c:\users\сергей\documents\visual studio 2015\Projects\Kollokvium\Kollokvium\obj\Debug\Kollokvium.exe
 c:\users\сергей\documents\visual studio 2015\Projects\Kollokvium\Kollokvium\obj\Debug\Kollokvium.pdb
+C:\Users\Сергей\Desktop\MathSystem\Kollokvium\bin\Debug\Kollokvium.exe.config
+C:\Users\Сергей\Desktop\MathSystem\Kollokvium\obj\Debug\Kollokvium.exe
+C:\Users\Сергей\Desktop\MathSystem\Kollokvium\obj\Debug\Kollokvium.pdb
+C:\Users\Сергей\Desktop\MathSystem\Kollokvium\bin\Debug\Kollokvium.exe
+C:\Users\Сергей\Desktop\MathSystem\Kollokvium\bin\Debug\Kollokvium.pdb
+C:\Users\Сергей\Desktop\MathSystem\Kollokvium\obj\Debug\Kollokvium.csprojResolveAssemblyReference.cache
+C:\Users\Сергей\Desktop\MathSystem\Kollokvium\obj\Debug\Kollokvium.Form1.resources
+C:\Users\Сергей\Desktop\MathSystem\Kollokvium\obj\Debug\Kollokvium.Properties.Resources.resources
+C:\Users\Сергей\Desktop\MathSystem\Kollokvium\obj\Debug\Kollokvium.csproj.GenerateResource.Cache
