@@ -15,77 +15,77 @@ namespace Kollokvium
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if ((textBox1.Text != "") && (textBox2.Text != ""))
+            if ((PervoeChislo.Text != "") && (Vtoroechislo.Text != ""))
             {
-                BigInteger num1 = BigInteger.Parse(textBox1.Text);
-                BigInteger num2 = BigInteger.Parse(textBox2.Text);
-                if (radioButton1.Checked)
+                BigInteger num1 = BigInteger.Parse(PervoeChislo.Text);
+                BigInteger num2 = BigInteger.Parse(Vtoroechislo.Text);
+                if (compare_chislo.Checked)  //сравнение
                 {
                     int res = BigInteger.Compare(num1, num2);
                     switch (res)
                     {
                         case 1:
                             {
-                                textBox3.Text = 0.ToString();
+                                Resultatchislo.Text = 0.ToString();
                                 break;
                             }
                         case -1:
                             {
-                                textBox3.Text = 1.ToString();
+                                Resultatchislo.Text = 1.ToString();
                                 break;
                             }
                         default:
                             {
-                                textBox3.Text = res.ToString();
+                                Resultatchislo.Text = res.ToString();
                                 break;
                             }
                     }
                 }
-                if (radioButton2.Checked)
+                if (add_chislo.Checked) //сложенгие
                 {
-                    textBox3.Text = BigInteger.Add(num1, num2).ToString();
+                    Resultatchislo.Text = BigInteger.Add(num1, num2).ToString();
                 }
-                if (radioButton3.Checked)
+                if (substruct_chislo.Checked) //вычитание
                 {
-                    textBox3.Text = BigInteger.Subtract(num1, num2).ToString();
+                    Resultatchislo.Text = BigInteger.Subtract(num1, num2).ToString();
                 }
-                if (radioButton4.Checked)
+                if (multty_chislo.Checked) //умножение
                 {
-                    textBox3.Text = BigInteger.Multiply(num1, num2).ToString();
+                    Resultatchislo.Text = BigInteger.Multiply(num1, num2).ToString();
                 }
-                if(radioButton5.Checked)
+                if(div_chislo.Checked) //деление
                 {
                     if (!num2.IsZero)
                     {
-                        textBox3.Text = BigInteger.Divide(num1, num2).ToString();
+                        Resultatchislo.Text = BigInteger.Divide(num1, num2).ToString();
                     }
                     else
                     {
-                        textBox3.Text = "На ноль делить нельзя";
+                        Resultatchislo.Text = "На ноль делить нельзя";
                     }
                 }
-                if(radioButton6.Checked)
+                if(mod_chislo.Checked) //остаток от деления
                 {
                     if (!num2.IsZero)
                     {
                         BigInteger num3;
                         BigInteger.DivRem(num1, num2, out num3);
-                        textBox3.Text = num3.ToString();
+                        Resultatchislo.Text = num3.ToString();
                     }
                     else
                     {
-                        textBox3.Text = "На ноль делить нельзя";
+                        Resultatchislo.Text = "На ноль делить нельзя";
                     }
                 }
-                if(radioButton7.Checked)
+                if(NOD_chislo.Checked) //НОД
                 {
                   
-                        textBox3.Text = BigInteger.GreatestCommonDivisor(num1, num2).ToString();
+                        Resultatchislo.Text = BigInteger.GreatestCommonDivisor(num1, num2).ToString();
                   
                 }
-                if(radioButton8.Checked)
+                if(NOK_chislo.Checked)//НОК
                 {
-                    textBox3.Text = BigInteger.Divide(BigInteger.Abs(BigInteger.Multiply(num1, num2)), BigInteger.GreatestCommonDivisor(num1, num2)).ToString();
+                    Resultatchislo.Text = BigInteger.Divide(BigInteger.Abs(BigInteger.Multiply(num1, num2)), BigInteger.GreatestCommonDivisor(num1, num2)).ToString();
                 }
                 
             }
@@ -94,26 +94,37 @@ namespace Kollokvium
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            string text = (sender as TextBox).Text ?? "";
+            string text = (sender as TextBox).Text ?? ""; 
           
 
-            if (!(Char.IsDigit(e.KeyChar)))
+            if (!(Char.IsDigit(e.KeyChar))) //ввод только цифр в поле
             {
                 if ( (e.KeyChar != (char)Keys.Back) && (e.KeyChar != 45))
                 {
                     e.Handled = true;
                 }
-                if (e.KeyChar == 45 && text.Contains('-'))
+                if (e.KeyChar == 45 &&  text.Contains('-')) //два минуса подряд не могут идти
+                {         
+                        e.Handled = true;
+                }
+                if(e.KeyChar == 45 &&(text.Contains('1') || text.Contains('2') || text.Contains('3') || text.Contains('4') || text.Contains('5')
+                || text.Contains('6') || text.Contains('7') || text.Contains('8') || text.Contains('9'))) //минус после цифр не может идти
                 {
                     e.Handled = true;
                 }
+              
+            }
+            if (e.KeyChar == 48 && !(text.Contains('1') || text.Contains('2') || text.Contains('3') || text.Contains('4') || text.Contains('5')
+                || text.Contains('6') ||  text.Contains('7') || text.Contains('8') || text.Contains('9'))) //число не может начинаться с нуля
+            {
+                e.Handled = true;
             }
 
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            if(radioButton1.Checked)
+            if(compare_chislo.Checked) //включения помощи при сравнения чисел
             {
                 label4.Visible = true;
             }
@@ -125,111 +136,111 @@ namespace Kollokvium
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if ((textBox4.Text != "") && (textBox5.Text != "") && (textBox6.Text != "") && (textBox7.Text != ""))
+            if ((chisl1_drobi.Text != "") && (znam1_drobi.Text != "") && (chisl2_drobi.Text != "") && (znam2_drobi.Text != ""))
             {
-                if (textBox5.Text != "0" && textBox7.Text != "0")
+                if (znam1_drobi.Text != "0" && znam2_drobi.Text != "0")
                 {
-                    BigInteger chislitel1 = BigInteger.Parse(textBox4.Text);
-                    BigInteger dilitel1 = BigInteger.Parse(textBox5.Text);
-                    BigInteger chislitel2 = BigInteger.Parse(textBox6.Text);
-                    BigInteger dilitel2 = BigInteger.Parse(textBox7.Text);
-                    if (radioButton9.Checked)
+                    BigInteger chislitel1 = BigInteger.Parse(chisl1_drobi.Text);
+                    BigInteger dilitel1 = BigInteger.Parse(znam1_drobi.Text);
+                    BigInteger chislitel2 = BigInteger.Parse(chisl2_drobi.Text);
+                    BigInteger dilitel2 = BigInteger.Parse(znam2_drobi.Text);
+                    if (add_drobi.Checked) // сложение дробей
                     {
                         BigInteger num1 = BigInteger.Multiply(dilitel1, dilitel2);
                         BigInteger num2 = BigInteger.Add(BigInteger.Multiply(chislitel1, dilitel2), BigInteger.Multiply(chislitel2, dilitel1));
                         BigInteger NOD = BigInteger.GreatestCommonDivisor(num2, num1);
-                        while (!NOD.IsOne)
+                        while (!NOD.IsOne) //сокращение дроби
                         {
                             num1 = BigInteger.Divide(num1, NOD);
                             num2 = BigInteger.Divide(num2, NOD);
                             NOD = BigInteger.GreatestCommonDivisor(num2, num1);
                         }
-                        textBox9.Text = num1.ToString();
-                        textBox8.Text = num2.ToString();
+                        res_znam_drobi.Text = num1.ToString();
+                        res_chisl_drobi.Text = num2.ToString();
                         if (num1.IsOne)
                         {
-                            textBox10.Visible = true;
+                            res_drobi.Visible = true;
                             label8.Visible = true;
-                            textBox10.Text = num2.ToString();
+                            res_drobi.Text = num2.ToString();
                         }
                         else
                         {
-                            textBox10.Visible = false;
+                            res_drobi.Visible = false;
                             label8.Visible = false;
                         }
-                    }
-                    if (radioButton10.Checked)
+                    } 
+                    if (substruct_drobi.Checked) //вычитание дробей
                     {
                         BigInteger num1 = BigInteger.Multiply(dilitel1, dilitel2);
                         BigInteger num2 = BigInteger.Subtract(BigInteger.Multiply(chislitel1, dilitel2), BigInteger.Multiply(chislitel2, dilitel1));
                         BigInteger NOD = BigInteger.GreatestCommonDivisor(num2, num1);
-                        while (!NOD.IsOne)
+                        while (!NOD.IsOne) //сокращение дроби
                         {
                             num1 = BigInteger.Divide(num1, NOD);
                             num2 = BigInteger.Divide(num2, NOD);
                             NOD = BigInteger.GreatestCommonDivisor(num2, num1);
                         }
-                        textBox9.Text = num1.ToString();
-                        textBox8.Text = num2.ToString();
+                        res_znam_drobi.Text = num1.ToString();
+                        res_chisl_drobi.Text = num2.ToString();
                         if (num1.IsOne)
                         {
-                            textBox10.Visible = true;
+                            res_drobi.Visible = true;
                             label8.Visible = true;
-                            textBox10.Text = num2.ToString();
+                            res_drobi.Text = num2.ToString();
                         }
                         else
                         {
-                            textBox10.Visible = false;
+                            res_drobi.Visible = false;
                             label8.Visible = false;
                         }
                     }
-                    if (radioButton11.Checked)
+                    if (multy_drobi.Checked) // умножение дробей
                     {
                         BigInteger num1 = BigInteger.Multiply(dilitel1, dilitel2);
                         BigInteger num2 = BigInteger.Multiply(chislitel1, chislitel2);
                         BigInteger NOD = BigInteger.GreatestCommonDivisor(num2, num1);
-                        while (!NOD.IsOne)
+                        while (!NOD.IsOne) // сокращение дробей
                         {
                             num1 = BigInteger.Divide(num1, NOD);
                             num2 = BigInteger.Divide(num2, NOD);
                             NOD = BigInteger.GreatestCommonDivisor(num2, num1);
                         }
-                        textBox9.Text = num1.ToString();
-                        textBox8.Text = num2.ToString();
+                        res_znam_drobi.Text = num1.ToString();
+                        res_chisl_drobi.Text = num2.ToString();
                         if (num1.IsOne)
                         {
-                            textBox10.Visible = true;
+                            res_drobi.Visible = true;
                             label8.Visible = true;
-                            textBox10.Text = num2.ToString();
+                            res_drobi.Text = num2.ToString();
                         }
                         else
                         {
-                            textBox10.Visible = false;
+                            res_drobi.Visible = false;
                             label8.Visible = false;
                         }
                     }
-                    if (radioButton12.Checked)
+                    if (div_drobi.Checked) //деление дробей
                     {
                         BigInteger num1 = BigInteger.Multiply(dilitel1, chislitel2);
                         BigInteger num2 = BigInteger.Multiply(chislitel1, dilitel2);
                         BigInteger NOD = BigInteger.GreatestCommonDivisor(num2, num1);
-                        while (!NOD.IsOne)
+                        while (!NOD.IsOne) //сокращение дробей
                         {
                             num1 = BigInteger.Divide(num1, NOD);
                             num2 = BigInteger.Divide(num2, NOD);
                             NOD = BigInteger.GreatestCommonDivisor(num2, num1);
                         }
-                        textBox9.Text = num1.ToString();
-                        textBox8.Text = num2.ToString();
+                        res_znam_drobi.Text = num1.ToString();
+                        res_chisl_drobi.Text = num2.ToString();
                         if (num1.IsOne)
                         {
-                            textBox10.Visible = true;
+                            res_drobi.Visible = true;
                             label8.Visible = true;
-                            textBox10.Text = num2.ToString();
+                            res_drobi.Text = num2.ToString();
                         }
                         else
                         {
-                            textBox10.Visible = false;
+                            res_drobi.Visible = false;
                             label8.Visible = false;
                         }
                     }
@@ -237,7 +248,7 @@ namespace Kollokvium
             }
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) //выбор степени первого многочлена
         {
             x0.Text = "0"; x1.Text = "0"; x2.Text = "0"; x3.Text = "0"; x4.Text = "0";
             x5.Text = "0"; x6.Text = "0"; x7.Text = "0"; x8.Text = "0"; x9.Text = "0";
@@ -556,7 +567,7 @@ namespace Kollokvium
             }
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e) //выбор степени второго многочлена
         {
             y0.Text = "0"; y1.Text = "0"; y2.Text = "0"; y3.Text = "0"; y4.Text = "0";
             y5.Text = "0"; y6.Text = "0"; y7.Text = "0"; y8.Text = "0"; y9.Text = "0";
@@ -905,7 +916,7 @@ namespace Kollokvium
             BigInteger ny10 = BigInteger.Parse(y10.Text);
             BigInteger ny11 = BigInteger.Parse(y11.Text);
 
-            if(radioButton13.Checked)
+            if(add_polin.Checked) //сложение многочленов
             {
                 z11.Text = BigInteger.Add(nx11, ny11).ToString();
                 z10.Text = BigInteger.Add(nx10, ny10).ToString();
@@ -920,7 +931,7 @@ namespace Kollokvium
                 z1.Text = BigInteger.Add(nx1, ny1).ToString();
                 z0.Text = BigInteger.Add(nx0, ny0).ToString();
             }
-            if(radioButton14.Checked)
+            if(substruct_polin.Checked) //вычитание многочленов
             {
                 z11.Text = BigInteger.Subtract(nx11, ny11).ToString();
                 z10.Text = BigInteger.Subtract(nx10, ny10).ToString();
@@ -935,7 +946,7 @@ namespace Kollokvium
                 z1.Text = BigInteger.Subtract(nx1, ny1).ToString();
                 z0.Text = BigInteger.Subtract(nx0, ny0).ToString();
             }
-            if(radioButton15.Checked)
+            if(multych_polin.Checked) //умножение на число
             {
                 BigInteger num1 = BigInteger.Parse(chislo1.Text);
                 z11.Text = BigInteger.Multiply(nx11, num1).ToString();
@@ -951,7 +962,7 @@ namespace Kollokvium
                 z1.Text = BigInteger.Multiply(nx1, num1).ToString();
                 z0.Text = BigInteger.Multiply(nx0, num1).ToString();
             }
-            if(radioButton16.Checked)
+            if(proizv_polin.Checked) //производная многочлена
             {
                 z11.Text = "0";
                 z10.Text = BigInteger.Multiply(nx11, 11).ToString();
@@ -968,9 +979,9 @@ namespace Kollokvium
             }
         }
 
-        private void radioButton15_CheckedChanged(object sender, EventArgs e)
+        private void radioButton15_CheckedChanged(object sender, EventArgs e) //отображения второго многочлена или нет, в зависимости от выбранного действия
         {
-            if(radioButton15.Checked)
+            if(multych_polin.Checked) //отображаем поле для ввода числа
             {
                 chislo1.Visible = true;
                 label34.Text = "Число";
@@ -1032,9 +1043,10 @@ namespace Kollokvium
             }
         }
 
-        private void radioButton16_CheckedChanged(object sender, EventArgs e)
+        private void radioButton16_CheckedChanged(object sender, EventArgs e) //отображения второго многочлена или нет, в зависимости от выбранного действия
         {
-            if (radioButton16.Checked)
+            {
+            if (proizv_polin.Checked) //если выбранное дейстие - производная
             {
                 label34.Visible = false;
                 comboBox2.Visible = false;

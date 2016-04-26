@@ -28,44 +28,76 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PervoeChislo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.TabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_chislo = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.NOK_chislo = new System.Windows.Forms.RadioButton();
+            this.NOD_chislo = new System.Windows.Forms.RadioButton();
+            this.mod_chislo = new System.Windows.Forms.RadioButton();
+            this.div_chislo = new System.Windows.Forms.RadioButton();
+            this.multty_chislo = new System.Windows.Forms.RadioButton();
+            this.substruct_chislo = new System.Windows.Forms.RadioButton();
+            this.add_chislo = new System.Windows.Forms.RadioButton();
+            this.compare_chislo = new System.Windows.Forms.RadioButton();
+            this.Resultatchislo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Vtoroechislo = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.res_drobi = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button_drobi = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.res_chisl_drobi = new System.Windows.Forms.TextBox();
+            this.res_znam_drobi = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.div_drobi = new System.Windows.Forms.RadioButton();
+            this.multy_drobi = new System.Windows.Forms.RadioButton();
+            this.substruct_drobi = new System.Windows.Forms.RadioButton();
+            this.add_drobi = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.znam2_drobi = new System.Windows.Forms.TextBox();
+            this.chisl2_drobi = new System.Windows.Forms.TextBox();
+            this.znam1_drobi = new System.Windows.Forms.TextBox();
+            this.chisl1_drobi = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.chislo1 = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.proizv_polin = new System.Windows.Forms.RadioButton();
+            this.multych_polin = new System.Windows.Forms.RadioButton();
+            this.substruct_polin = new System.Windows.Forms.RadioButton();
+            this.add_polin = new System.Windows.Forms.RadioButton();
+            this.label22 = new System.Windows.Forms.Label();
+            this.z0 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.z4 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.z8 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.z1 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.z2 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.z3 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.z5 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.z6 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.z7 = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.z9 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.z10 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.z11 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.button_polin = new System.Windows.Forms.Button();
             this.y0 = new System.Windows.Forms.TextBox();
             this.ly0 = new System.Windows.Forms.Label();
             this.y4 = new System.Windows.Forms.TextBox();
@@ -118,38 +150,6 @@
             this.lx11 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.z0 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.z4 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.z8 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.z1 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.z2 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.z3 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.z5 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.z6 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.z7 = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.z9 = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.z10 = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.z11 = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton13 = new System.Windows.Forms.RadioButton();
-            this.radioButton14 = new System.Windows.Forms.RadioButton();
-            this.radioButton15 = new System.Windows.Forms.RadioButton();
-            this.radioButton16 = new System.Windows.Forms.RadioButton();
-            this.chislo1 = new System.Windows.Forms.TextBox();
             this.TabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -159,13 +159,13 @@
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // PervoeChislo
             // 
-            this.textBox1.Location = new System.Drawing.Point(22, 61);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(916, 26);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.PervoeChislo.Location = new System.Drawing.Point(22, 61);
+            this.PervoeChislo.Name = "PervoeChislo";
+            this.PervoeChislo.Size = new System.Drawing.Size(916, 26);
+            this.PervoeChislo.TabIndex = 0;
+            this.PervoeChislo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label1
             // 
@@ -190,13 +190,13 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.button_chislo);
             this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Controls.Add(this.textBox3);
+            this.tabPage1.Controls.Add(this.Resultatchislo);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.textBox2);
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.Vtoroechislo);
+            this.tabPage1.Controls.Add(this.PervoeChislo);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
@@ -211,30 +211,30 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(663, 318);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(275, 40);
+            this.label4.Size = new System.Drawing.Size(262, 40);
             this.label4.TabIndex = 8;
-            this.label4.Text = "0 - они равны или 1 первое больше\r\n1 - второе больше\r\n";
+            this.label4.Text = "0 - они равны или первое больше\r\n1 - второе больше\r\n";
             // 
-            // button1
+            // button_chislo
             // 
-            this.button1.Location = new System.Drawing.Point(692, 601);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(246, 77);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Результат";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button_chislo.Location = new System.Drawing.Point(692, 601);
+            this.button_chislo.Name = "button_chislo";
+            this.button_chislo.Size = new System.Drawing.Size(246, 77);
+            this.button_chislo.TabIndex = 7;
+            this.button_chislo.Text = "Результат";
+            this.button_chislo.UseVisualStyleBackColor = true;
+            this.button_chislo.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton8);
-            this.groupBox1.Controls.Add(this.radioButton7);
-            this.groupBox1.Controls.Add(this.radioButton6);
-            this.groupBox1.Controls.Add(this.radioButton5);
-            this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.NOK_chislo);
+            this.groupBox1.Controls.Add(this.NOD_chislo);
+            this.groupBox1.Controls.Add(this.mod_chislo);
+            this.groupBox1.Controls.Add(this.div_chislo);
+            this.groupBox1.Controls.Add(this.multty_chislo);
+            this.groupBox1.Controls.Add(this.substruct_chislo);
+            this.groupBox1.Controls.Add(this.add_chislo);
+            this.groupBox1.Controls.Add(this.compare_chislo);
             this.groupBox1.Location = new System.Drawing.Point(24, 363);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(543, 252);
@@ -242,102 +242,103 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Выберите действие";
             // 
-            // radioButton8
+            // NOK_chislo
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(245, 192);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(68, 24);
-            this.radioButton8.TabIndex = 7;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "НОК";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.NOK_chislo.AutoSize = true;
+            this.NOK_chislo.Location = new System.Drawing.Point(245, 192);
+            this.NOK_chislo.Name = "NOK_chislo";
+            this.NOK_chislo.Size = new System.Drawing.Size(68, 24);
+            this.NOK_chislo.TabIndex = 7;
+            this.NOK_chislo.TabStop = true;
+            this.NOK_chislo.Text = "НОК";
+            this.NOK_chislo.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // NOD_chislo
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(243, 140);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(70, 24);
-            this.radioButton7.TabIndex = 6;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "НОД";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.NOD_chislo.AutoSize = true;
+            this.NOD_chislo.Location = new System.Drawing.Point(243, 140);
+            this.NOD_chislo.Name = "NOD_chislo";
+            this.NOD_chislo.Size = new System.Drawing.Size(70, 24);
+            this.NOD_chislo.TabIndex = 6;
+            this.NOD_chislo.TabStop = true;
+            this.NOD_chislo.Text = "НОД";
+            this.NOD_chislo.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // mod_chislo
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(243, 87);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(190, 24);
-            this.radioButton6.TabIndex = 5;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Остаток от деления";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.mod_chislo.AutoSize = true;
+            this.mod_chislo.Location = new System.Drawing.Point(243, 87);
+            this.mod_chislo.Name = "mod_chislo";
+            this.mod_chislo.Size = new System.Drawing.Size(190, 24);
+            this.mod_chislo.TabIndex = 5;
+            this.mod_chislo.TabStop = true;
+            this.mod_chislo.Text = "Остаток от деления";
+            this.mod_chislo.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // div_chislo
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(243, 37);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(101, 24);
-            this.radioButton5.TabIndex = 4;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Деление";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.div_chislo.AutoSize = true;
+            this.div_chislo.Location = new System.Drawing.Point(243, 37);
+            this.div_chislo.Name = "div_chislo";
+            this.div_chislo.Size = new System.Drawing.Size(101, 24);
+            this.div_chislo.TabIndex = 4;
+            this.div_chislo.TabStop = true;
+            this.div_chislo.Text = "Деление";
+            this.div_chislo.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // multty_chislo
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(7, 192);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(120, 24);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Умножение";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.multty_chislo.AutoSize = true;
+            this.multty_chislo.Location = new System.Drawing.Point(7, 192);
+            this.multty_chislo.Name = "multty_chislo";
+            this.multty_chislo.Size = new System.Drawing.Size(120, 24);
+            this.multty_chislo.TabIndex = 3;
+            this.multty_chislo.TabStop = true;
+            this.multty_chislo.Text = "Умножение";
+            this.multty_chislo.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // substruct_chislo
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(7, 140);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(119, 24);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Вычитание";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.substruct_chislo.AutoSize = true;
+            this.substruct_chislo.Location = new System.Drawing.Point(7, 140);
+            this.substruct_chislo.Name = "substruct_chislo";
+            this.substruct_chislo.Size = new System.Drawing.Size(119, 24);
+            this.substruct_chislo.TabIndex = 2;
+            this.substruct_chislo.TabStop = true;
+            this.substruct_chislo.Text = "Вычитание";
+            this.substruct_chislo.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // add_chislo
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(7, 87);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(111, 24);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Сложение";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.add_chislo.AutoSize = true;
+            this.add_chislo.Location = new System.Drawing.Point(7, 87);
+            this.add_chislo.Name = "add_chislo";
+            this.add_chislo.Size = new System.Drawing.Size(111, 24);
+            this.add_chislo.TabIndex = 1;
+            this.add_chislo.TabStop = true;
+            this.add_chislo.Text = "Сложение";
+            this.add_chislo.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // compare_chislo
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(7, 37);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(117, 24);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Сравнение";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.compare_chislo.AutoSize = true;
+            this.compare_chislo.Location = new System.Drawing.Point(7, 37);
+            this.compare_chislo.Name = "compare_chislo";
+            this.compare_chislo.Size = new System.Drawing.Size(117, 24);
+            this.compare_chislo.TabIndex = 0;
+            this.compare_chislo.TabStop = true;
+            this.compare_chislo.Text = "Сравнение";
+            this.compare_chislo.UseVisualStyleBackColor = true;
+            this.compare_chislo.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // textBox3
+            // Resultatchislo
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(22, 254);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(916, 26);
-            this.textBox3.TabIndex = 5;
+            this.Resultatchislo.Enabled = false;
+            this.Resultatchislo.Location = new System.Drawing.Point(22, 254);
+            this.Resultatchislo.Name = "Resultatchislo";
+            this.Resultatchislo.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.Resultatchislo.Size = new System.Drawing.Size(916, 26);
+            this.Resultatchislo.TabIndex = 5;
             // 
             // label3
             // 
@@ -357,29 +358,29 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Второе число";
             // 
-            // textBox2
+            // Vtoroechislo
             // 
-            this.textBox2.Location = new System.Drawing.Point(22, 146);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(916, 26);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.Vtoroechislo.Location = new System.Drawing.Point(22, 146);
+            this.Vtoroechislo.Name = "Vtoroechislo";
+            this.Vtoroechislo.Size = new System.Drawing.Size(916, 26);
+            this.Vtoroechislo.TabIndex = 2;
+            this.Vtoroechislo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.textBox10);
+            this.tabPage2.Controls.Add(this.res_drobi);
             this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Controls.Add(this.button2);
+            this.tabPage2.Controls.Add(this.button_drobi);
             this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.textBox8);
-            this.tabPage2.Controls.Add(this.textBox9);
+            this.tabPage2.Controls.Add(this.res_chisl_drobi);
+            this.tabPage2.Controls.Add(this.res_znam_drobi);
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.textBox7);
-            this.tabPage2.Controls.Add(this.textBox6);
-            this.tabPage2.Controls.Add(this.textBox5);
-            this.tabPage2.Controls.Add(this.textBox4);
+            this.tabPage2.Controls.Add(this.znam2_drobi);
+            this.tabPage2.Controls.Add(this.chisl2_drobi);
+            this.tabPage2.Controls.Add(this.znam1_drobi);
+            this.tabPage2.Controls.Add(this.chisl1_drobi);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -388,14 +389,14 @@
             this.tabPage2.Text = "Дроби";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // textBox10
+            // res_drobi
             // 
-            this.textBox10.Enabled = false;
-            this.textBox10.Location = new System.Drawing.Point(512, 191);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(375, 26);
-            this.textBox10.TabIndex = 12;
-            this.textBox10.Visible = false;
+            this.res_drobi.Enabled = false;
+            this.res_drobi.Location = new System.Drawing.Point(512, 191);
+            this.res_drobi.Name = "res_drobi";
+            this.res_drobi.Size = new System.Drawing.Size(375, 26);
+            this.res_drobi.TabIndex = 12;
+            this.res_drobi.Visible = false;
             // 
             // label8
             // 
@@ -407,15 +408,15 @@
             this.label8.Text = "Результат в десятичном";
             this.label8.Visible = false;
             // 
-            // button2
+            // button_drobi
             // 
-            this.button2.Location = new System.Drawing.Point(641, 460);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(246, 77);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Результат";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button_drobi.Location = new System.Drawing.Point(641, 460);
+            this.button_drobi.Name = "button_drobi";
+            this.button_drobi.Size = new System.Drawing.Size(246, 77);
+            this.button_drobi.TabIndex = 10;
+            this.button_drobi.Text = "Результат";
+            this.button_drobi.UseVisualStyleBackColor = true;
+            this.button_drobi.Click += new System.EventHandler(this.button2_Click);
             // 
             // label7
             // 
@@ -426,28 +427,28 @@
             this.label7.TabIndex = 9;
             this.label7.Text = "Результат в дроби";
             // 
-            // textBox8
+            // res_chisl_drobi
             // 
-            this.textBox8.Enabled = false;
-            this.textBox8.Location = new System.Drawing.Point(512, 43);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(375, 26);
-            this.textBox8.TabIndex = 8;
+            this.res_chisl_drobi.Enabled = false;
+            this.res_chisl_drobi.Location = new System.Drawing.Point(512, 43);
+            this.res_chisl_drobi.Name = "res_chisl_drobi";
+            this.res_chisl_drobi.Size = new System.Drawing.Size(375, 26);
+            this.res_chisl_drobi.TabIndex = 8;
             // 
-            // textBox9
+            // res_znam_drobi
             // 
-            this.textBox9.Enabled = false;
-            this.textBox9.Location = new System.Drawing.Point(512, 84);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(375, 26);
-            this.textBox9.TabIndex = 7;
+            this.res_znam_drobi.Enabled = false;
+            this.res_znam_drobi.Location = new System.Drawing.Point(512, 84);
+            this.res_znam_drobi.Name = "res_znam_drobi";
+            this.res_znam_drobi.Size = new System.Drawing.Size(375, 26);
+            this.res_znam_drobi.TabIndex = 7;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.radioButton12);
-            this.groupBox2.Controls.Add(this.radioButton11);
-            this.groupBox2.Controls.Add(this.radioButton10);
-            this.groupBox2.Controls.Add(this.radioButton9);
+            this.groupBox2.Controls.Add(this.div_drobi);
+            this.groupBox2.Controls.Add(this.multy_drobi);
+            this.groupBox2.Controls.Add(this.substruct_drobi);
+            this.groupBox2.Controls.Add(this.add_drobi);
             this.groupBox2.Location = new System.Drawing.Point(34, 290);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(210, 247);
@@ -455,49 +456,49 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Выберите действие";
             // 
-            // radioButton12
+            // div_drobi
             // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(15, 187);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(101, 24);
-            this.radioButton12.TabIndex = 13;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "Деление";
-            this.radioButton12.UseVisualStyleBackColor = true;
+            this.div_drobi.AutoSize = true;
+            this.div_drobi.Location = new System.Drawing.Point(15, 187);
+            this.div_drobi.Name = "div_drobi";
+            this.div_drobi.Size = new System.Drawing.Size(101, 24);
+            this.div_drobi.TabIndex = 13;
+            this.div_drobi.TabStop = true;
+            this.div_drobi.Text = "Деление";
+            this.div_drobi.UseVisualStyleBackColor = true;
             // 
-            // radioButton11
+            // multy_drobi
             // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Location = new System.Drawing.Point(15, 139);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(120, 24);
-            this.radioButton11.TabIndex = 12;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "Умножение";
-            this.radioButton11.UseVisualStyleBackColor = true;
+            this.multy_drobi.AutoSize = true;
+            this.multy_drobi.Location = new System.Drawing.Point(15, 139);
+            this.multy_drobi.Name = "multy_drobi";
+            this.multy_drobi.Size = new System.Drawing.Size(120, 24);
+            this.multy_drobi.TabIndex = 12;
+            this.multy_drobi.TabStop = true;
+            this.multy_drobi.Text = "Умножение";
+            this.multy_drobi.UseVisualStyleBackColor = true;
             // 
-            // radioButton10
+            // substruct_drobi
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Location = new System.Drawing.Point(15, 87);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(119, 24);
-            this.radioButton10.TabIndex = 11;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "Вычитание";
-            this.radioButton10.UseVisualStyleBackColor = true;
+            this.substruct_drobi.AutoSize = true;
+            this.substruct_drobi.Location = new System.Drawing.Point(15, 87);
+            this.substruct_drobi.Name = "substruct_drobi";
+            this.substruct_drobi.Size = new System.Drawing.Size(119, 24);
+            this.substruct_drobi.TabIndex = 11;
+            this.substruct_drobi.TabStop = true;
+            this.substruct_drobi.Text = "Вычитание";
+            this.substruct_drobi.UseVisualStyleBackColor = true;
             // 
-            // radioButton9
+            // add_drobi
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(15, 37);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(111, 24);
-            this.radioButton9.TabIndex = 10;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "Сложение";
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.add_drobi.AutoSize = true;
+            this.add_drobi.Location = new System.Drawing.Point(15, 37);
+            this.add_drobi.Name = "add_drobi";
+            this.add_drobi.Size = new System.Drawing.Size(111, 24);
+            this.add_drobi.TabIndex = 10;
+            this.add_drobi.TabStop = true;
+            this.add_drobi.Text = "Сложение";
+            this.add_drobi.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -517,37 +518,37 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Первая дробь";
             // 
-            // textBox7
+            // znam2_drobi
             // 
-            this.textBox7.Location = new System.Drawing.Point(34, 200);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(375, 26);
-            this.textBox7.TabIndex = 3;
-            this.textBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.znam2_drobi.Location = new System.Drawing.Point(34, 200);
+            this.znam2_drobi.Name = "znam2_drobi";
+            this.znam2_drobi.Size = new System.Drawing.Size(375, 26);
+            this.znam2_drobi.TabIndex = 3;
+            this.znam2_drobi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
-            // textBox6
+            // chisl2_drobi
             // 
-            this.textBox6.Location = new System.Drawing.Point(34, 168);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(375, 26);
-            this.textBox6.TabIndex = 2;
-            this.textBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.chisl2_drobi.Location = new System.Drawing.Point(34, 168);
+            this.chisl2_drobi.Name = "chisl2_drobi";
+            this.chisl2_drobi.Size = new System.Drawing.Size(375, 26);
+            this.chisl2_drobi.TabIndex = 2;
+            this.chisl2_drobi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
-            // textBox5
+            // znam1_drobi
             // 
-            this.textBox5.Location = new System.Drawing.Point(34, 75);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(375, 26);
-            this.textBox5.TabIndex = 1;
-            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.znam1_drobi.Location = new System.Drawing.Point(34, 75);
+            this.znam1_drobi.Name = "znam1_drobi";
+            this.znam1_drobi.Size = new System.Drawing.Size(375, 26);
+            this.znam1_drobi.TabIndex = 1;
+            this.znam1_drobi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
-            // textBox4
+            // chisl1_drobi
             // 
-            this.textBox4.Location = new System.Drawing.Point(34, 43);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(375, 26);
-            this.textBox4.TabIndex = 0;
-            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.chisl1_drobi.Location = new System.Drawing.Point(34, 43);
+            this.chisl1_drobi.Name = "chisl1_drobi";
+            this.chisl1_drobi.Size = new System.Drawing.Size(375, 26);
+            this.chisl1_drobi.TabIndex = 0;
+            this.chisl1_drobi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // tabPage3
             // 
@@ -578,7 +579,7 @@
             this.tabPage3.Controls.Add(this.label20);
             this.tabPage3.Controls.Add(this.z11);
             this.tabPage3.Controls.Add(this.label21);
-            this.tabPage3.Controls.Add(this.button3);
+            this.tabPage3.Controls.Add(this.button_polin);
             this.tabPage3.Controls.Add(this.y0);
             this.tabPage3.Controls.Add(this.ly0);
             this.tabPage3.Controls.Add(this.y4);
@@ -637,6 +638,296 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Многочлены";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // chislo1
+            // 
+            this.chislo1.Location = new System.Drawing.Point(188, 193);
+            this.chislo1.Name = "chislo1";
+            this.chislo1.Size = new System.Drawing.Size(164, 26);
+            this.chislo1.TabIndex = 80;
+            this.chislo1.Visible = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.proizv_polin);
+            this.groupBox3.Controls.Add(this.multych_polin);
+            this.groupBox3.Controls.Add(this.substruct_polin);
+            this.groupBox3.Controls.Add(this.add_polin);
+            this.groupBox3.Location = new System.Drawing.Point(17, 567);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(481, 104);
+            this.groupBox3.TabIndex = 79;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Выберите действие";
+            // 
+            // proizv_polin
+            // 
+            this.proizv_polin.AutoSize = true;
+            this.proizv_polin.Location = new System.Drawing.Point(232, 74);
+            this.proizv_polin.Name = "proizv_polin";
+            this.proizv_polin.Size = new System.Drawing.Size(137, 24);
+            this.proizv_polin.TabIndex = 83;
+            this.proizv_polin.TabStop = true;
+            this.proizv_polin.Text = "Производная";
+            this.proizv_polin.UseVisualStyleBackColor = true;
+            this.proizv_polin.CheckedChanged += new System.EventHandler(this.radioButton16_CheckedChanged);
+            // 
+            // multych_polin
+            // 
+            this.multych_polin.AutoSize = true;
+            this.multych_polin.Location = new System.Drawing.Point(232, 27);
+            this.multych_polin.Name = "multych_polin";
+            this.multych_polin.Size = new System.Drawing.Size(191, 24);
+            this.multych_polin.TabIndex = 82;
+            this.multych_polin.TabStop = true;
+            this.multych_polin.Text = "Умножение на число";
+            this.multych_polin.UseVisualStyleBackColor = true;
+            this.multych_polin.CheckedChanged += new System.EventHandler(this.radioButton15_CheckedChanged);
+            // 
+            // substruct_polin
+            // 
+            this.substruct_polin.AutoSize = true;
+            this.substruct_polin.Location = new System.Drawing.Point(15, 74);
+            this.substruct_polin.Name = "substruct_polin";
+            this.substruct_polin.Size = new System.Drawing.Size(119, 24);
+            this.substruct_polin.TabIndex = 81;
+            this.substruct_polin.TabStop = true;
+            this.substruct_polin.Text = "Вычитание";
+            this.substruct_polin.UseVisualStyleBackColor = true;
+            // 
+            // add_polin
+            // 
+            this.add_polin.AutoSize = true;
+            this.add_polin.Location = new System.Drawing.Point(15, 27);
+            this.add_polin.Name = "add_polin";
+            this.add_polin.Size = new System.Drawing.Size(111, 24);
+            this.add_polin.TabIndex = 80;
+            this.add_polin.TabStop = true;
+            this.add_polin.Text = "Сложение";
+            this.add_polin.UseVisualStyleBackColor = true;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(16, 370);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(89, 20);
+            this.label22.TabIndex = 78;
+            this.label22.Text = "Результат";
+            // 
+            // z0
+            // 
+            this.z0.Enabled = false;
+            this.z0.Location = new System.Drawing.Point(752, 507);
+            this.z0.Name = "z0";
+            this.z0.Size = new System.Drawing.Size(174, 26);
+            this.z0.TabIndex = 77;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(717, 504);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(29, 20);
+            this.label10.TabIndex = 76;
+            this.label10.Text = "X0";
+            // 
+            // z4
+            // 
+            this.z4.Enabled = false;
+            this.z4.Location = new System.Drawing.Point(752, 462);
+            this.z4.Name = "z4";
+            this.z4.Size = new System.Drawing.Size(174, 26);
+            this.z4.TabIndex = 75;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(717, 459);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(29, 20);
+            this.label11.TabIndex = 74;
+            this.label11.Text = "X4";
+            // 
+            // z8
+            // 
+            this.z8.Enabled = false;
+            this.z8.Location = new System.Drawing.Point(752, 415);
+            this.z8.Name = "z8";
+            this.z8.Size = new System.Drawing.Size(174, 26);
+            this.z8.TabIndex = 73;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(717, 415);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(29, 20);
+            this.label12.TabIndex = 72;
+            this.label12.Text = "X8";
+            // 
+            // z1
+            // 
+            this.z1.Enabled = false;
+            this.z1.Location = new System.Drawing.Point(515, 507);
+            this.z1.Name = "z1";
+            this.z1.Size = new System.Drawing.Size(174, 26);
+            this.z1.TabIndex = 71;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(480, 504);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(29, 20);
+            this.label13.TabIndex = 70;
+            this.label13.Text = "X1";
+            // 
+            // z2
+            // 
+            this.z2.Enabled = false;
+            this.z2.Location = new System.Drawing.Point(289, 501);
+            this.z2.Name = "z2";
+            this.z2.Size = new System.Drawing.Size(174, 26);
+            this.z2.TabIndex = 69;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(254, 504);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(29, 20);
+            this.label14.TabIndex = 68;
+            this.label14.Text = "X2";
+            // 
+            // z3
+            // 
+            this.z3.Enabled = false;
+            this.z3.Location = new System.Drawing.Point(57, 501);
+            this.z3.Name = "z3";
+            this.z3.Size = new System.Drawing.Size(174, 26);
+            this.z3.TabIndex = 67;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(13, 507);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(29, 20);
+            this.label15.TabIndex = 66;
+            this.label15.Text = "X3";
+            // 
+            // z5
+            // 
+            this.z5.Enabled = false;
+            this.z5.Location = new System.Drawing.Point(515, 462);
+            this.z5.Name = "z5";
+            this.z5.Size = new System.Drawing.Size(174, 26);
+            this.z5.TabIndex = 65;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(480, 459);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(29, 20);
+            this.label16.TabIndex = 64;
+            this.label16.Text = "X5";
+            // 
+            // z6
+            // 
+            this.z6.Enabled = false;
+            this.z6.Location = new System.Drawing.Point(289, 456);
+            this.z6.Name = "z6";
+            this.z6.Size = new System.Drawing.Size(174, 26);
+            this.z6.TabIndex = 63;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(254, 462);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(29, 20);
+            this.label17.TabIndex = 62;
+            this.label17.Text = "X6";
+            // 
+            // z7
+            // 
+            this.z7.Enabled = false;
+            this.z7.Location = new System.Drawing.Point(57, 459);
+            this.z7.Name = "z7";
+            this.z7.Size = new System.Drawing.Size(174, 26);
+            this.z7.TabIndex = 61;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(13, 462);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(29, 20);
+            this.label18.TabIndex = 60;
+            this.label18.Text = "X7";
+            // 
+            // z9
+            // 
+            this.z9.Enabled = false;
+            this.z9.Location = new System.Drawing.Point(515, 415);
+            this.z9.Name = "z9";
+            this.z9.Size = new System.Drawing.Size(174, 26);
+            this.z9.TabIndex = 59;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(480, 415);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(29, 20);
+            this.label19.TabIndex = 58;
+            this.label19.Text = "X9";
+            // 
+            // z10
+            // 
+            this.z10.Enabled = false;
+            this.z10.Location = new System.Drawing.Point(289, 409);
+            this.z10.Name = "z10";
+            this.z10.Size = new System.Drawing.Size(174, 26);
+            this.z10.TabIndex = 57;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(245, 412);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(38, 20);
+            this.label20.TabIndex = 56;
+            this.label20.Text = "X10";
+            // 
+            // z11
+            // 
+            this.z11.Enabled = false;
+            this.z11.Location = new System.Drawing.Point(57, 412);
+            this.z11.Name = "z11";
+            this.z11.Size = new System.Drawing.Size(174, 26);
+            this.z11.TabIndex = 55;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(13, 415);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(38, 20);
+            this.label21.TabIndex = 54;
+            this.label21.Text = "X11";
+            // 
+            // button_polin
+            // 
+            this.button_polin.Location = new System.Drawing.Point(696, 594);
+            this.button_polin.Name = "button_polin";
+            this.button_polin.Size = new System.Drawing.Size(246, 77);
+            this.button_polin.TabIndex = 53;
+            this.button_polin.Text = "Результат";
+            this.button_polin.UseVisualStyleBackColor = true;
+            this.button_polin.Click += new System.EventHandler(this.button3_Click);
             // 
             // y0
             // 
@@ -1180,296 +1471,6 @@
             this.label9.TabIndex = 0;
             this.label9.Text = "Первый многочлен";
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(696, 594);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(246, 77);
-            this.button3.TabIndex = 53;
-            this.button3.Text = "Результат";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // z0
-            // 
-            this.z0.Enabled = false;
-            this.z0.Location = new System.Drawing.Point(752, 507);
-            this.z0.Name = "z0";
-            this.z0.Size = new System.Drawing.Size(174, 26);
-            this.z0.TabIndex = 77;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(717, 504);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(29, 20);
-            this.label10.TabIndex = 76;
-            this.label10.Text = "X0";
-            // 
-            // z4
-            // 
-            this.z4.Enabled = false;
-            this.z4.Location = new System.Drawing.Point(752, 462);
-            this.z4.Name = "z4";
-            this.z4.Size = new System.Drawing.Size(174, 26);
-            this.z4.TabIndex = 75;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(717, 459);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(29, 20);
-            this.label11.TabIndex = 74;
-            this.label11.Text = "X4";
-            // 
-            // z8
-            // 
-            this.z8.Enabled = false;
-            this.z8.Location = new System.Drawing.Point(752, 415);
-            this.z8.Name = "z8";
-            this.z8.Size = new System.Drawing.Size(174, 26);
-            this.z8.TabIndex = 73;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(717, 415);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(29, 20);
-            this.label12.TabIndex = 72;
-            this.label12.Text = "X8";
-            // 
-            // z1
-            // 
-            this.z1.Enabled = false;
-            this.z1.Location = new System.Drawing.Point(515, 507);
-            this.z1.Name = "z1";
-            this.z1.Size = new System.Drawing.Size(174, 26);
-            this.z1.TabIndex = 71;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(480, 504);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(29, 20);
-            this.label13.TabIndex = 70;
-            this.label13.Text = "X1";
-            // 
-            // z2
-            // 
-            this.z2.Enabled = false;
-            this.z2.Location = new System.Drawing.Point(289, 501);
-            this.z2.Name = "z2";
-            this.z2.Size = new System.Drawing.Size(174, 26);
-            this.z2.TabIndex = 69;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(254, 504);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(29, 20);
-            this.label14.TabIndex = 68;
-            this.label14.Text = "X2";
-            // 
-            // z3
-            // 
-            this.z3.Enabled = false;
-            this.z3.Location = new System.Drawing.Point(57, 501);
-            this.z3.Name = "z3";
-            this.z3.Size = new System.Drawing.Size(174, 26);
-            this.z3.TabIndex = 67;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(13, 507);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(29, 20);
-            this.label15.TabIndex = 66;
-            this.label15.Text = "X3";
-            // 
-            // z5
-            // 
-            this.z5.Enabled = false;
-            this.z5.Location = new System.Drawing.Point(515, 462);
-            this.z5.Name = "z5";
-            this.z5.Size = new System.Drawing.Size(174, 26);
-            this.z5.TabIndex = 65;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(480, 459);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(29, 20);
-            this.label16.TabIndex = 64;
-            this.label16.Text = "X5";
-            // 
-            // z6
-            // 
-            this.z6.Enabled = false;
-            this.z6.Location = new System.Drawing.Point(289, 456);
-            this.z6.Name = "z6";
-            this.z6.Size = new System.Drawing.Size(174, 26);
-            this.z6.TabIndex = 63;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(254, 462);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(29, 20);
-            this.label17.TabIndex = 62;
-            this.label17.Text = "X6";
-            // 
-            // z7
-            // 
-            this.z7.Enabled = false;
-            this.z7.Location = new System.Drawing.Point(57, 459);
-            this.z7.Name = "z7";
-            this.z7.Size = new System.Drawing.Size(174, 26);
-            this.z7.TabIndex = 61;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(13, 462);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(29, 20);
-            this.label18.TabIndex = 60;
-            this.label18.Text = "X7";
-            // 
-            // z9
-            // 
-            this.z9.Enabled = false;
-            this.z9.Location = new System.Drawing.Point(515, 415);
-            this.z9.Name = "z9";
-            this.z9.Size = new System.Drawing.Size(174, 26);
-            this.z9.TabIndex = 59;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(480, 415);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(29, 20);
-            this.label19.TabIndex = 58;
-            this.label19.Text = "X9";
-            // 
-            // z10
-            // 
-            this.z10.Enabled = false;
-            this.z10.Location = new System.Drawing.Point(289, 409);
-            this.z10.Name = "z10";
-            this.z10.Size = new System.Drawing.Size(174, 26);
-            this.z10.TabIndex = 57;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(245, 412);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(38, 20);
-            this.label20.TabIndex = 56;
-            this.label20.Text = "X10";
-            // 
-            // z11
-            // 
-            this.z11.Enabled = false;
-            this.z11.Location = new System.Drawing.Point(57, 412);
-            this.z11.Name = "z11";
-            this.z11.Size = new System.Drawing.Size(174, 26);
-            this.z11.TabIndex = 55;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(13, 415);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(38, 20);
-            this.label21.TabIndex = 54;
-            this.label21.Text = "X11";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(16, 370);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(89, 20);
-            this.label22.TabIndex = 78;
-            this.label22.Text = "Результат";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.radioButton16);
-            this.groupBox3.Controls.Add(this.radioButton15);
-            this.groupBox3.Controls.Add(this.radioButton14);
-            this.groupBox3.Controls.Add(this.radioButton13);
-            this.groupBox3.Location = new System.Drawing.Point(17, 567);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(481, 104);
-            this.groupBox3.TabIndex = 79;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Выберите действие";
-            // 
-            // radioButton13
-            // 
-            this.radioButton13.AutoSize = true;
-            this.radioButton13.Location = new System.Drawing.Point(15, 27);
-            this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(111, 24);
-            this.radioButton13.TabIndex = 80;
-            this.radioButton13.TabStop = true;
-            this.radioButton13.Text = "Сложение";
-            this.radioButton13.UseVisualStyleBackColor = true;
-            // 
-            // radioButton14
-            // 
-            this.radioButton14.AutoSize = true;
-            this.radioButton14.Location = new System.Drawing.Point(15, 74);
-            this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(119, 24);
-            this.radioButton14.TabIndex = 81;
-            this.radioButton14.TabStop = true;
-            this.radioButton14.Text = "Вычитание";
-            this.radioButton14.UseVisualStyleBackColor = true;
-            // 
-            // radioButton15
-            // 
-            this.radioButton15.AutoSize = true;
-            this.radioButton15.Location = new System.Drawing.Point(232, 27);
-            this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(191, 24);
-            this.radioButton15.TabIndex = 82;
-            this.radioButton15.TabStop = true;
-            this.radioButton15.Text = "Умножение на число";
-            this.radioButton15.UseVisualStyleBackColor = true;
-            this.radioButton15.CheckedChanged += new System.EventHandler(this.radioButton15_CheckedChanged);
-            // 
-            // radioButton16
-            // 
-            this.radioButton16.AutoSize = true;
-            this.radioButton16.Location = new System.Drawing.Point(232, 74);
-            this.radioButton16.Name = "radioButton16";
-            this.radioButton16.Size = new System.Drawing.Size(137, 24);
-            this.radioButton16.TabIndex = 83;
-            this.radioButton16.TabStop = true;
-            this.radioButton16.Text = "Производная";
-            this.radioButton16.UseVisualStyleBackColor = true;
-            this.radioButton16.CheckedChanged += new System.EventHandler(this.radioButton16_CheckedChanged);
-            // 
-            // chislo1
-            // 
-            this.chislo1.Location = new System.Drawing.Point(188, 193);
-            this.chislo1.Name = "chislo1";
-            this.chislo1.Size = new System.Drawing.Size(164, 26);
-            this.chislo1.TabIndex = 80;
-            this.chislo1.Visible = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -1497,43 +1498,43 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox PervoeChislo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabControl TabControl;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Resultatchislo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Vtoroechislo;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton multty_chislo;
+        private System.Windows.Forms.RadioButton substruct_chislo;
+        private System.Windows.Forms.RadioButton add_chislo;
+        private System.Windows.Forms.RadioButton compare_chislo;
+        private System.Windows.Forms.Button button_chislo;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.RadioButton mod_chislo;
+        private System.Windows.Forms.RadioButton div_chislo;
+        private System.Windows.Forms.RadioButton NOK_chislo;
+        private System.Windows.Forms.RadioButton NOD_chislo;
+        private System.Windows.Forms.Button button_drobi;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox res_chisl_drobi;
+        private System.Windows.Forms.TextBox res_znam_drobi;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton12;
-        private System.Windows.Forms.RadioButton radioButton11;
-        private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.RadioButton radioButton9;
+        private System.Windows.Forms.RadioButton div_drobi;
+        private System.Windows.Forms.RadioButton multy_drobi;
+        private System.Windows.Forms.RadioButton substruct_drobi;
+        private System.Windows.Forms.RadioButton add_drobi;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox znam2_drobi;
+        private System.Windows.Forms.TextBox chisl2_drobi;
+        private System.Windows.Forms.TextBox znam1_drobi;
+        private System.Windows.Forms.TextBox chisl1_drobi;
+        private System.Windows.Forms.TextBox res_drobi;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label9;
@@ -1588,10 +1589,10 @@
         private System.Windows.Forms.TextBox x11;
         private System.Windows.Forms.Label lx11;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton16;
-        private System.Windows.Forms.RadioButton radioButton15;
-        private System.Windows.Forms.RadioButton radioButton14;
-        private System.Windows.Forms.RadioButton radioButton13;
+        private System.Windows.Forms.RadioButton proizv_polin;
+        private System.Windows.Forms.RadioButton multych_polin;
+        private System.Windows.Forms.RadioButton substruct_polin;
+        private System.Windows.Forms.RadioButton add_polin;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox z0;
         private System.Windows.Forms.Label label10;
@@ -1617,7 +1618,7 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox z11;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button_polin;
         private System.Windows.Forms.TextBox chislo1;
     }
 }
