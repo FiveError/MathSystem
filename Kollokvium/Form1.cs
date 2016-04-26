@@ -53,7 +53,7 @@ namespace Kollokvium
                 {
                     Resultatchislo.Text = BigInteger.Multiply(num1, num2).ToString();
                 }
-                if(div_chislo.Checked) //деление
+                if (div_chislo.Checked) //деление
                 {
                     if (!num2.IsZero)
                     {
@@ -64,7 +64,7 @@ namespace Kollokvium
                         Resultatchislo.Text = "На ноль делить нельзя";
                     }
                 }
-                if(mod_chislo.Checked) //остаток от деления
+                if (mod_chislo.Checked) //остаток от деления
                 {
                     if (!num2.IsZero)
                     {
@@ -77,45 +77,45 @@ namespace Kollokvium
                         Resultatchislo.Text = "На ноль делить нельзя";
                     }
                 }
-                if(NOD_chislo.Checked) //НОД
+                if (NOD_chislo.Checked) //НОД
                 {
-                  
-                        Resultatchislo.Text = BigInteger.GreatestCommonDivisor(num1, num2).ToString();
-                  
+
+                    Resultatchislo.Text = BigInteger.GreatestCommonDivisor(num1, num2).ToString();
+
                 }
-                if(NOK_chislo.Checked)//НОК
+                if (NOK_chislo.Checked)//НОК
                 {
                     Resultatchislo.Text = BigInteger.Divide(BigInteger.Abs(BigInteger.Multiply(num1, num2)), BigInteger.GreatestCommonDivisor(num1, num2)).ToString();
                 }
-                
+
             }
-           
+
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            string text = (sender as TextBox).Text ?? ""; 
-          
+            string text = (sender as TextBox).Text ?? "";
+
 
             if (!(Char.IsDigit(e.KeyChar))) //ввод только цифр в поле
             {
-                if ( (e.KeyChar != (char)Keys.Back) && (e.KeyChar != 45))
+                if ((e.KeyChar != (char)Keys.Back) && (e.KeyChar != 45))
                 {
                     e.Handled = true;
                 }
-                if (e.KeyChar == 45 &&  text.Contains('-')) //два минуса подряд не могут идти
-                {         
-                        e.Handled = true;
+                if (e.KeyChar == 45 && text.Contains('-')) //два минуса подряд не могут идти
+                {
+                    e.Handled = true;
                 }
-                if(e.KeyChar == 45 &&(text.Contains('1') || text.Contains('2') || text.Contains('3') || text.Contains('4') || text.Contains('5')
+                if (e.KeyChar == 45 && (text.Contains('1') || text.Contains('2') || text.Contains('3') || text.Contains('4') || text.Contains('5')
                 || text.Contains('6') || text.Contains('7') || text.Contains('8') || text.Contains('9'))) //минус после цифр не может идти
                 {
                     e.Handled = true;
                 }
-              
+
             }
             if (e.KeyChar == 48 && !(text.Contains('1') || text.Contains('2') || text.Contains('3') || text.Contains('4') || text.Contains('5')
-                || text.Contains('6') ||  text.Contains('7') || text.Contains('8') || text.Contains('9'))) //число не может начинаться с нуля
+                || text.Contains('6') || text.Contains('7') || text.Contains('8') || text.Contains('9'))) //число не может начинаться с нуля
             {
                 e.Handled = true;
             }
@@ -124,7 +124,7 @@ namespace Kollokvium
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            if(compare_chislo.Checked) //включения помощи при сравнения чисел
+            if (compare_chislo.Checked) //включения помощи при сравнения чисел
             {
                 label4.Visible = true;
             }
@@ -168,7 +168,7 @@ namespace Kollokvium
                             res_drobi.Visible = false;
                             label8.Visible = false;
                         }
-                    } 
+                    }
                     if (substruct_drobi.Checked) //вычитание дробей
                     {
                         BigInteger num1 = BigInteger.Multiply(dilitel1, dilitel2);
@@ -253,8 +253,8 @@ namespace Kollokvium
             x0.Text = "0"; x1.Text = "0"; x2.Text = "0"; x3.Text = "0"; x4.Text = "0";
             x5.Text = "0"; x6.Text = "0"; x7.Text = "0"; x8.Text = "0"; x9.Text = "0";
             x10.Text = "0"; x11.Text = "0";
-            int m =  comboBox1.SelectedIndex;
-            switch(m)
+            int m = comboBox1.SelectedIndex;
+            switch (m)
             {
                 case 10:
                     {
@@ -269,7 +269,7 @@ namespace Kollokvium
                         x7.Visible = true;
                         x9.Visible = true;
                         x10.Visible = true;
-                        x11.Visible = true; 
+                        x11.Visible = true;
                         lx11.Visible = true;
                         lx10.Visible = true;
                         lx9.Visible = true;
@@ -571,7 +571,7 @@ namespace Kollokvium
         {
             y0.Text = "0"; y1.Text = "0"; y2.Text = "0"; y3.Text = "0"; y4.Text = "0";
             y5.Text = "0"; y6.Text = "0"; y7.Text = "0"; y8.Text = "0"; y9.Text = "0";
-            y10.Text = "0"; y11.Text = "0"; 
+            y10.Text = "0"; y11.Text = "0";
 
             int m = comboBox2.SelectedIndex;
             switch (m)
@@ -916,7 +916,7 @@ namespace Kollokvium
             BigInteger ny10 = BigInteger.Parse(y10.Text);
             BigInteger ny11 = BigInteger.Parse(y11.Text);
 
-            if(add_polin.Checked) //сложение многочленов
+            if (add_polin.Checked) //сложение многочленов
             {
                 z11.Text = BigInteger.Add(nx11, ny11).ToString();
                 z10.Text = BigInteger.Add(nx10, ny10).ToString();
@@ -931,7 +931,7 @@ namespace Kollokvium
                 z1.Text = BigInteger.Add(nx1, ny1).ToString();
                 z0.Text = BigInteger.Add(nx0, ny0).ToString();
             }
-            if(substruct_polin.Checked) //вычитание многочленов
+            if (substruct_polin.Checked) //вычитание многочленов
             {
                 z11.Text = BigInteger.Subtract(nx11, ny11).ToString();
                 z10.Text = BigInteger.Subtract(nx10, ny10).ToString();
@@ -946,7 +946,7 @@ namespace Kollokvium
                 z1.Text = BigInteger.Subtract(nx1, ny1).ToString();
                 z0.Text = BigInteger.Subtract(nx0, ny0).ToString();
             }
-            if(multych_polin.Checked) //умножение на число
+            if (multych_polin.Checked) //умножение на число
             {
                 BigInteger num1 = BigInteger.Parse(chislo1.Text);
                 z11.Text = BigInteger.Multiply(nx11, num1).ToString();
@@ -962,7 +962,7 @@ namespace Kollokvium
                 z1.Text = BigInteger.Multiply(nx1, num1).ToString();
                 z0.Text = BigInteger.Multiply(nx0, num1).ToString();
             }
-            if(proizv_polin.Checked) //производная многочлена
+            if (proizv_polin.Checked) //производная многочлена
             {
                 z11.Text = "0";
                 z10.Text = BigInteger.Multiply(nx11, 11).ToString();
@@ -981,7 +981,7 @@ namespace Kollokvium
 
         private void radioButton15_CheckedChanged(object sender, EventArgs e) //отображения второго многочлена или нет, в зависимости от выбранного действия
         {
-            if(multych_polin.Checked) //отображаем поле для ввода числа
+            if (multych_polin.Checked) //отображаем поле для ввода числа
             {
                 chislo1.Visible = true;
                 label34.Text = "Число";
@@ -1014,6 +1014,7 @@ namespace Kollokvium
             else
             {
                 chislo1.Visible = false;
+                comboBox2.SelectedItem = "11";
                 label34.Text = "Второй многочлен";
                 comboBox2.Visible = true;
                 y8.Visible = true;
@@ -1046,63 +1047,65 @@ namespace Kollokvium
         private void radioButton16_CheckedChanged(object sender, EventArgs e) //отображения второго многочлена или нет, в зависимости от выбранного действия
         {
             {
-            if (proizv_polin.Checked) //если выбранное дейстие - производная
-            {
-                label34.Visible = false;
-                comboBox2.Visible = false;
-                y8.Visible = false;
-                y4.Visible = false;
-                y0.Visible = false;
-                y1.Visible = false;
-                y2.Visible = false;
-                y3.Visible = false;
-                y5.Visible = false;
-                y6.Visible = false;
-                y7.Visible = false;
-                y9.Visible = false;
-                y10.Visible = false;
-                y11.Visible = false;
-                ly11.Visible = false;
-                ly10.Visible = false;
-                ly9.Visible = false;
-                ly7.Visible = false;
-                ly6.Visible = false;
-                ly5.Visible = false;
-                ly3.Visible = false;
-                ly2.Visible = false;
-                ly1.Visible = false;
-                ly0.Visible = false;
-                ly4.Visible = false;
-                ly8.Visible = false;
-            }
-            else
-            {
-                label34.Visible = true;
-                comboBox2.Visible = true;
-                y8.Visible = true;
-                y4.Visible = true;
-                y0.Visible = true;
-                y1.Visible = true;
-                y2.Visible = true;
-                y3.Visible = true;
-                y5.Visible = true;
-                y6.Visible = true;
-                y7.Visible = true;
-                y9.Visible = true;
-                y10.Visible = true;
-                y11.Visible = true;
-                ly11.Visible = true;
-                ly10.Visible = true;
-                ly9.Visible = true;
-                ly7.Visible = true;
-                ly6.Visible = true;
-                ly5.Visible = true;
-                ly3.Visible = true;
-                ly2.Visible = true;
-                ly1.Visible = true;
-                ly0.Visible = true;
-                ly4.Visible = true;
-                ly8.Visible = true;
+                if (proizv_polin.Checked) //если выбранное дейстие - производная
+                {
+                    label34.Visible = false;
+                    comboBox2.Visible = false;
+                    y8.Visible = false;
+                    y4.Visible = false;
+                    y0.Visible = false;
+                    y1.Visible = false;
+                    y2.Visible = false;
+                    y3.Visible = false;
+                    y5.Visible = false;
+                    y6.Visible = false;
+                    y7.Visible = false;
+                    y9.Visible = false;
+                    y10.Visible = false;
+                    y11.Visible = false;
+                    ly11.Visible = false;
+                    ly10.Visible = false;
+                    ly9.Visible = false;
+                    ly7.Visible = false;
+                    ly6.Visible = false;
+                    ly5.Visible = false;
+                    ly3.Visible = false;
+                    ly2.Visible = false;
+                    ly1.Visible = false;
+                    ly0.Visible = false;
+                    ly4.Visible = false;
+                    ly8.Visible = false;
+                }
+                else
+                {
+                    comboBox2.SelectedItem = "11";
+                    label34.Visible = true;
+                    comboBox2.Visible = true;
+                    y8.Visible = true;
+                    y4.Visible = true;
+                    y0.Visible = true;
+                    y1.Visible = true;
+                    y2.Visible = true;
+                    y3.Visible = true;
+                    y5.Visible = true;
+                    y6.Visible = true;
+                    y7.Visible = true;
+                    y9.Visible = true;
+                    y10.Visible = true;
+                    y11.Visible = true;
+                    ly11.Visible = true;
+                    ly10.Visible = true;
+                    ly9.Visible = true;
+                    ly7.Visible = true;
+                    ly6.Visible = true;
+                    ly5.Visible = true;
+                    ly3.Visible = true;
+                    ly2.Visible = true;
+                    ly1.Visible = true;
+                    ly0.Visible = true;
+                    ly4.Visible = true;
+                    ly8.Visible = true;
+                }
             }
         }
     }
