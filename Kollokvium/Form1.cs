@@ -85,7 +85,10 @@ namespace Kollokvium
                 }
                 if (NOK_chislo.Checked)//НОК
                 {
-                    Resultatchislo.Text = BigInteger.Divide(BigInteger.Abs(BigInteger.Multiply(num1, num2)), BigInteger.GreatestCommonDivisor(num1, num2)).ToString();
+                    if ((num1 == 0) && (num2 == 0))
+                        Resultatchislo.Text = "Не определен";
+                    else
+                        Resultatchislo.Text = BigInteger.Divide(BigInteger.Abs(BigInteger.Multiply(num1, num2)), BigInteger.GreatestCommonDivisor(num1, num2)).ToString();
                 }
 
             }
@@ -114,12 +117,6 @@ namespace Kollokvium
                 }
 
             }
-            if (e.KeyChar == 48 && !(text.Contains('1') || text.Contains('2') || text.Contains('3') || text.Contains('4') || text.Contains('5')
-                || text.Contains('6') || text.Contains('7') || text.Contains('8') || text.Contains('9'))) //число не может начинаться с нуля
-            {
-                e.Handled = true;
-            }
-
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -136,14 +133,18 @@ namespace Kollokvium
 
         private void button2_Click(object sender, EventArgs e)
         {
+            res_znam_drobi.Text = "";
+            res_chisl_drobi.Text = "";
+            res_drobi.Visible = false;
+            label8.Visible = false;
             if ((chisl1_drobi.Text != "") && (znam1_drobi.Text != "") && (chisl2_drobi.Text != "") && (znam2_drobi.Text != ""))
             {
-                if (znam1_drobi.Text != "0" && znam2_drobi.Text != "0")
-                {
-                    BigInteger chislitel1 = BigInteger.Parse(chisl1_drobi.Text);
-                    BigInteger dilitel1 = BigInteger.Parse(znam1_drobi.Text);
-                    BigInteger chislitel2 = BigInteger.Parse(chisl2_drobi.Text);
-                    BigInteger dilitel2 = BigInteger.Parse(znam2_drobi.Text);
+                BigInteger chislitel1 = BigInteger.Parse(chisl1_drobi.Text);
+                BigInteger dilitel1 = BigInteger.Parse(znam1_drobi.Text);
+                BigInteger chislitel2 = BigInteger.Parse(chisl2_drobi.Text);
+                BigInteger dilitel2 = BigInteger.Parse(znam2_drobi.Text);
+                if(dilitel2 != 0 && dilitel1 != 0)
+                { 
                     if (add_drobi.Checked) // сложение дробей
                     {
                         BigInteger num1 = BigInteger.Multiply(dilitel1, dilitel2);
@@ -221,29 +222,42 @@ namespace Kollokvium
                     }
                     if (div_drobi.Checked) //деление дробей
                     {
-                        BigInteger num1 = BigInteger.Multiply(dilitel1, chislitel2);
-                        BigInteger num2 = BigInteger.Multiply(chislitel1, dilitel2);
-                        BigInteger NOD = BigInteger.GreatestCommonDivisor(num2, num1);
-                        while (!NOD.IsOne) //сокращение дробей
+                        if (chislitel2 != 0)
                         {
-                            num1 = BigInteger.Divide(num1, NOD);
-                            num2 = BigInteger.Divide(num2, NOD);
-                            NOD = BigInteger.GreatestCommonDivisor(num2, num1);
-                        }
-                        res_znam_drobi.Text = num1.ToString();
-                        res_chisl_drobi.Text = num2.ToString();
-                        if (num1.IsOne)
-                        {
-                            res_drobi.Visible = true;
-                            label8.Visible = true;
-                            res_drobi.Text = num2.ToString();
+                            BigInteger num1 = BigInteger.Multiply(dilitel1, chislitel2);
+                            BigInteger num2 = BigInteger.Multiply(chislitel1, dilitel2);
+                            BigInteger NOD = BigInteger.GreatestCommonDivisor(num2, num1);
+                            while (!NOD.IsOne) //сокращение дробей
+                            {
+                                num1 = BigInteger.Divide(num1, NOD);
+                                num2 = BigInteger.Divide(num2, NOD);
+                                NOD = BigInteger.GreatestCommonDivisor(num2, num1);
+                            }
+                            res_znam_drobi.Text = num1.ToString();
+                            res_chisl_drobi.Text = num2.ToString();
+                            if (num1.IsOne)
+                            {
+                                res_drobi.Visible = true;
+                                label8.Visible = true;
+                                res_drobi.Text = num2.ToString();
+                            }
+                            else
+                            {
+                                res_drobi.Visible = false;
+                                label8.Visible = false;
+                            }
                         }
                         else
                         {
-                            res_drobi.Visible = false;
-                            label8.Visible = false;
+                            res_znam_drobi.Text = "Ошибка!";
+                            res_chisl_drobi.Text = "Ошибка!";
                         }
                     }
+                }
+                else
+                {
+                    res_znam_drobi.Text = "Ошибка!";
+                    res_chisl_drobi.Text = "Ошибка!";
                 }
             }
         }
